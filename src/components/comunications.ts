@@ -1,7 +1,7 @@
 import { Character } from '../types/character.type';
 import { render } from './base';
 
-export function createComunications(
+export function createCommunications(
     selector = 'body',
     position: InsertPosition = 'beforeend',
     character: Character,
@@ -14,5 +14,5 @@ export function createComunications(
     `;
 
     const element = render(selector, position, template);
-    return element;
+    return element as HTMLElement;
 }
