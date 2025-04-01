@@ -1,4 +1,4 @@
-import type { Character } from '../types/character.js';
+import type { Character } from '../types/character.type.js';
 import { render } from './base.js';
 
 export function createCharacter(
