@@ -8,6 +8,6 @@ import { getCharacters } from './services/repo.js';
     const data = await getCharacters();
     createHeader();
     data.forEach((character) => {
-        createCharacter('ul', 'beforeend', character);
+        createCharacter('ul.character', 'beforeend', character);
     });
 })();
